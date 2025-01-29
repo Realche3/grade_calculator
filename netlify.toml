@@ -1,4 +1,6 @@
-[[redirects]]
-from ="/*"
-to = "/index.html"
-status = 200
+[build]
+  command = "npm install"
+  publish = "public"
+
+[functions]
+  directory = "functions"

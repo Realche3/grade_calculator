@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     try {
-      const response = await fetch('/calculate-grade', {
+      const response = await fetch('/.netlify/functions/calculate-grade', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
