@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Calculator</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Fireworks library -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Student Grade Calculator</h1>
+
+    <!-- Canadian Standards Table -->
+    <div class="standards-table">
+      <h4>The calculators provided utilize the following letter grades 
+        along with their standard numerical equivalents, which are based on grade point values.</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Letter Grade</th>
+            <th>Percentage Range</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>A+</td><td>90% - 100%</td></tr>
+          <tr><td>A</td><td>85% - 89%</td></tr>
+          <tr><td>A-</td><td>80% - 84%</td></tr>
+          <tr><td>B+</td><td>77% - 79%</td></tr>
+          <tr><td>B</td><td>73% - 76%</td></tr>
+          <tr><td>B-</td><td>70% - 72%</td></tr>
+          <tr><td>C+</td><td>67% - 69%</td></tr>
+          <tr><td>C</td><td>63% - 66%</td></tr>
+          <tr><td>C-</td><td>60% - 62%</td></tr>
+          <tr><td>D+</td><td>57% - 59%</td></tr>
+          <tr><td>D</td><td>53% - 56%</td></tr>
+          <tr><td>D-</td><td>50% - 52%</td></tr>
+          <tr><td>F</td><td>Below 50%</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Component Inputs -->
+    <div id="components">
+      <!-- Pre-filled Example Components -->
+      <div class="component">
+        <input type="text" placeholder="Component Name" class="component-name" value="Midterm">
+        <input type="number" placeholder="Grade (%)" class="component-grade">
+        <input type="number" placeholder="Weight (%)" class="component-weight" value="30">
+      </div>
+      <div class="component">
+        <input type="text" placeholder="Component Name" class="component-name" value="Final">
+        <input type="number" placeholder="Grade (%)" class="component-grade">
+        <input type="number" placeholder="Weight (%)" class="component-weight" value="70">
+      </div>
+    </div>
+
+    <!-- Buttons -->
+    <button id="addComponent">Add Component</button>
+    <button id="calculateGrade">Calculate Final Grade</button>
+
+    <!-- Result Display -->
+    <div id="result" class="result-display"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
